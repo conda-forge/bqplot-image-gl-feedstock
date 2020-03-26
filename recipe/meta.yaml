@@ -1,5 +1,5 @@
 {% set name = "bqplot-image-gl" %}
-{% set version = "0.1.6" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e64538e7d1521b62a7205892a138f83a77d3113830195a253b032a3884488c60
+  sha256: 694f4d4371488743709207e571a13ee9a145ccae7f107f2359f46f8114c735f9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Jupyter widget for displaying images with WebGL in bqplot'
+  summary: Jupyter widget for displaying images with WebGL in bqplot
   dev_url: https://github.com/glue-viz/bqplot-image-gl
 
 extra:
