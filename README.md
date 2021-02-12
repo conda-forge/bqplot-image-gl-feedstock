@@ -5,11 +5,11 @@ Home: http://github.com/glue-viz/bqplot-image-gl
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bqplot-image-gl-feedstock/blob/master/LICENSE.txt)
 
 Summary: Jupyter widget for displaying images with WebGL in bqplot
 
-
+Development: https://github.com/glue-viz/bqplot-image-gl
 
 Current build status
 ====================
