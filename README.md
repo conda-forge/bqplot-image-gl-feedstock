@@ -1,11 +1,11 @@
-About bqplot-image-gl
-=====================
+About bqplot-image-gl-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bqplot-image-gl-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/glue-viz/bqplot-image-gl
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bqplot-image-gl-feedstock/blob/main/LICENSE.txt)
 
 Summary: Jupyter widget for displaying images with WebGL in bqplot
 
@@ -145,7 +145,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@astrofrog-conda-forge](https://github.com/astrofrog-conda-forge/)
+* [@astrofrog](https://github.com/astrofrog/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
 * [@mwcraig](https://github.com/mwcraig/)
 
