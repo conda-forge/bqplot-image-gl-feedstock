@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - hatchling
     - jupyterlab >=3.6
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - ipywidgets >=7.0.0
     - bqplot >=0.12
     - pillow
@@ -29,6 +29,8 @@ requirements:
 test:
   imports:
     - bqplot_image_gl
+  requires:
+    - python {{ python_min }}
 
 about:
   home: http://github.com/glue-viz/bqplot-image-gl
