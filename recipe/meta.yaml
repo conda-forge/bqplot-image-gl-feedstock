@@ -19,6 +19,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - hatchling
+    - hatch-jupyter-builder
     - jupyterlab >=3.6
   run:
     - python >={{ python_min }}
