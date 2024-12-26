@@ -1,13 +1,13 @@
 {% set name = "bqplot-image-gl" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 139f70b2594c45461fc6b6ce6f9792b34b10758a58b0486abf1d7244fa533f89
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: bc010fb14f0b25cdd74ecd982b2885523da4d7694258ed9355f2ed4bc22a82ed
 
 build:
   noarch: python
@@ -16,12 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
-    - jupyter-packaging >=0.7
-    - jupyterlab >=3
+    - hatchling
+    - hatch-jupyter-builder
+    - jupyterlab >=3.6
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - ipywidgets >=7.0.0
     - bqplot >=0.12
     - pillow
@@ -29,6 +30,8 @@ requirements:
 test:
   imports:
     - bqplot_image_gl
+  requires:
+    - python {{ python_min }}
 
 about:
   home: http://github.com/glue-viz/bqplot-image-gl
